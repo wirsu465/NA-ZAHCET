@@ -1,0 +1,65 @@
+
+
+ import React, { Component } from "react";
+ import {
+   AppRegistry,
+   Image,
+   View,
+   Text,
+   Button,
+   StyleSheet
+ } from "react-native";
+ 
+ class SplashScreen extends Component {
+   render() {
+     console.disableYellowBox = true;
+     return (
+       <View style={styles.container}>
+         <Image
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
+import React, { Component } from "react";
+import {
+  AppRegistry,
+  Image,
+  View,
+  Text,
+  Button,
+  StyleSheet
+} from "react-native";
+
+class SplashScreen extends Component {
+  render() {
+    console.disableYellowBox = true;
+    return (
+      <View style={styles.container}>
+        <Image
+          source={require("./img/talk_people.png")}
+          style={{ width: 300, height: 300 }}
+        />
+        <Text style={{ fontSize: 22, textAlign: "center", marginTop: 30 }}>
+          Never forget to stay in touch with the people that matter to you.
+        </Text>
+        <View style={{ marginTop: 60, width: 240 }}>
+          <Button title="CONTINUE" color="#FE434C" />
+        </View>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#FFFFFF",
+    margin: 50,
+    alignItems: "center",
+    flex: 1,
+    flexDirection: "column"
+  }
+});
+
+AppRegistry.registerComponent("Scheduled", () => SplashScreen);
